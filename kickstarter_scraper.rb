@@ -5,7 +5,7 @@ require "pry"
 def create_project_hash
   html = File.read('fixtures/kickstarter.html')
   kickstarter = Nokogiri::HTML(html)
-  
+ 
   projects = {}
  
   # Iterate through the projects
@@ -15,8 +15,4 @@ def create_project_hash
  
   # return the projects hash
   projects
-  
-  #binding.pry
-  # write your code here
 end
-
